@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First jQuery Mobile Example</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+	<link href="../jquery.mobile-1.4.0/jquery.mobile-1.4.0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../jquery.mobile-1.4.0/jquery.mobile-1.4.0.js"></script>
+</head>
+<body>
+
+    <!-- This is the first page -->
+    <section id="firstpage" data-role="page">
+        
+        <header data-role="header">
+        	<h1>Page Content Header</h1>
+        </header>
+        
+        <div data-role="content">
+        	<p>This is page 1</p>
+        	<p><a href="#secondpage">Go to second page</a></p>
+        </div>
+        
+        <footer data-role="footer">Page Content Footer</footer>
+        
+    </section>
+
+    <!-- This is the second page -->
+    <div id="secondpage" data-role="page">
+    
+        <header data-role="header">
+        	<h1>Page Content Header</h1>
+        </header>
+        
+        <div data-role="content">
+        	<p>This is page 2</p>
+        	<p><a href="#firstpage">Go to first page</a></p>
+        </div>
+        
+        <div data-role="footer">Page Content Footer</div>
+        
+    </div>
+    
+</body>
+</html>

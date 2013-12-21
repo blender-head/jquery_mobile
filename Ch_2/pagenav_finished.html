@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile Page Navigation</title>
+
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link href="../jquery.mobile-1.2.0/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../jquery.mobile-1.2.0/jquery.mobile-1.2.0.js"></script>
+</head>
+<body>
+    <!-- Internal page that links to an external page -->
+    <section id="internalpage" data-role="page">
+        <header data-role="header">External Page Linking</header>
+        <div data-role="content">
+            <p>This is page 1</p>
+            <p><a href="externalpage1.html">Link to an external page</a></p>
+            <!-- Turn off AJAX page loading -->
+            <p><a href="externalpage2.html" rel="external">Link to another external page without AJAX page load</a></p>
+            <p><a href="externalpage1.html" data-ajax="false">Link to another external page without AJAX page load</a></p>
+        </div>
+    </section>
+</body>
+</html>

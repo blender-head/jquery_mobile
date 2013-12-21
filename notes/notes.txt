@@ -1,0 +1,20 @@
+1. Page:
+
+	data-role="page"
+	
+2. Content Section:
+
+	data-role="content"
+	
+3. Page Header:
+
+	data-role="header"
+	
+4. Page Footer:
+
+	data-role="footer"
+	
+5. Page Source:
+
+	- internal page
+	- external page
