@@ -1,56 +1,102 @@
-1. Page:
+01. Ch_1:
 
-	data-role="page"
-	<section id="firstpage" data-role="page"></section>
+	- jQuery Mobile page structure: -> first_jqmobile_start.html
+		
+		- page:
+			data-role="page" -> define a page
+			<section id="firstpage" data-role="page"></section>
+			
+		- header:
+			data-role="header"
+			<header data-role="header"></header>
 	
-2. Content Section:
-
-	data-role="content"
-	<div data-role="content"></div>
+		- content section:
+			data-role="content" -> define page content
+			<div data-role="content"></div>
 	
-3. Page Header:
-
-	data-role="header"
-	<header data-role="header"></header>
+		- page footer:
+			data-role="footer" -> define page footer
+			<footer data-role="footer"></footer>
+			
+02. Ch_2
+		
+	- jQuery Mobile page source: -> pagenav_finished.html
 	
-4. Page Footer:
-
-	data-role="footer"
-	<footer data-role="footer"></footer>
+		- internal page & external page
+		- page is by default loaded by ajax
+		- disable ajax page load: rel="external" or data-ajax="false"
+		
+	- page transitions: -> pagetransitions_finished.html
 	
-5. Page Source:
-
-	- internal page & external page
-	- page is by default loaded by ajax
-	- disable ajax page load: rel="external" or data-ajax="false"
+		- fade: 
+			data-transition="fade"
+			<a href="#secondpage" data-transition="fade">Fade to second page</a>
+			
+		- flip: 
+			data-transition="flip"
+			<a href="#secondpage" data-transition="flip">Flip to second page</a>
+			
+		- pop: 
+			data-transition="pop"
+			<a href="#secondpage" data-transition="pop">Pop to second page</a>
+			
+		- slide: 
+			data-transition="slide"
+			<a href="#secondpage" data-transition="slide">Slide to second page</a>
+			
+		- slide down: 
+			data-transition="slidedown"
+			<a href="#secondpage" data-transition="slidedown">Slide down to second page</a>
+			
+		- slide up: 
+			data-transition="slideup"
+			<a href="#secondpage" data-transition="slideup">Slide up to second page</a>
+			
+	- using dialog box: -> using_dialogs_finished.html
 	
-6. Page Transitions:
+		data-rel="dialog" -> define dialog box
+		<a href="#secondpage" data-rel="dialog">Display Dialog</a>
+	
+02. Ch_3:
+	
+	- toolbar: -> headersfooters_finished.html
+	
+		- <a href="#"></a> will automatically transform into a button
+		
+		- button position:
+			class="ui-btn-right" -> will position the button to right
+			<a href="#" class="ui-btn-right"></a> 
+		
+		- better toolbar formatting:
+			class="ui-bar" -> add extra spacing to footer
+			<footer data-role="footer" class="ui-bar">
+			
+	- navigation bar: -> navbar_finished.html
+	
+		- creating navbar:
+			data-role="navbar" -> define a navbar
+			<nav data-role="navbar"></nav>
+			
+		- add icon to button:
+			data-icon="minus" -> add icon to a button
+			<a href="#secondpage" data-icon="minus">Two</a>
+			
+		- make a button highlighted in active state:
+			class="ui-btn-active ui-state-persist"
+			<a href="#" class="ui-btn-active ui-state-persist" data-icon="minus">Two</a>
+			
+	- navbar position: -> navposition_finished.html
+	
+		- navbar positions:
+			- inline
+			- fixed
+			- fullscreen
+			
+			data-position="fixed" -> define position
+			<header data-role="header" data-position="fixed">
+			
+	- button: -> buttons_finished.html
+			
+	
 
-	- Fade: 
-		data-transition="fade"
-		<a href="#secondpage" data-transition="fade">Fade to second page</a>
-		
-	- Flip: 
-		data-transition="flip"
-		<a href="#secondpage" data-transition="flip">Flip to second page</a>
-		
-	- Pop: 
-		data-transition="pop"
-		<a href="#secondpage" data-transition="pop">Pop to second page</a>
-		
-	- Slide: 
-		data-transition="slide"
-		<a href="#secondpage" data-transition="slide">Slide to second page</a>
-		
-	- Slide Down: 
-		data-transition="slidedown"
-		<a href="#secondpage" data-transition="slidedown">Slide down to second page</a>
-		
-	- Slide Up: 
-		data-transition="slideup"
-		<a href="#secondpage" data-transition="slideup">Slide up to second page</a>
-		
-7. Using Dialog:
-
-	data-rel="dialog"
-	<a href="#secondpage" data-rel="dialog">Display Dialog</a>
+	
