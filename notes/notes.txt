@@ -1,4 +1,4 @@
-01. Ch_1:
+01. Ch_1: Introduction to jQuery Mobile
 
 	- jQuery Mobile page structure: -> first_jqmobile_start.html
 		
@@ -7,7 +7,7 @@
 			<section id="firstpage" data-role="page"></section>
 			
 		- header:
-			data-role="header"
+			data-role="header" -> define page header
 			<header data-role="header"></header>
 	
 		- content section:
@@ -18,7 +18,24 @@
 			data-role="footer" -> define page footer
 			<footer data-role="footer"></footer>
 			
-02. Ch_2
+		complete page:
+		
+		<section id="firstpage" data-role="page">
+        
+			<header data-role="header">
+				<h1>Page Content Header</h1>
+			</header>
+			
+			<div data-role="content">
+				<p>This is page 1</p>
+				<p><a href="#secondpage">Go to second page</a></p>
+			</div>
+			
+			<footer data-role="footer">Page Content Footer</footer>
+			
+		</section>
+			
+02. Ch_2: Building jQuery Mobile Pages
 		
 	- jQuery Mobile page source: -> pagenav_finished.html
 	
@@ -57,7 +74,7 @@
 		data-rel="dialog" -> define dialog box
 		<a href="#secondpage" data-rel="dialog">Display Dialog</a>
 	
-02. Ch_3:
+03. Ch_3: Working with Buttons and Toolbars
 	
 	- toolbar: -> headersfooters_finished.html
 	
@@ -75,7 +92,14 @@
 	
 		- creating navbar:
 			data-role="navbar" -> define a navbar
-			<nav data-role="navbar"></nav>
+			<nav data-role="navbar">
+                <ul>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="plus">One</a></li>
+                    <li><a href="#secondpage" data-icon="minus">Two</a></li>
+                    <li><a href="#" data-icon="check">Three</a></li>
+                    <li><a href="#" data-icon="grid">Four</a></li>
+                </ul>
+            </nav>
 			
 		- add icon to button:
 			data-icon="minus" -> add icon to a button
@@ -96,6 +120,59 @@
 			<header data-role="header" data-position="fixed">
 			
 	- button: -> buttons_finished.html
+	
+04. Ch_4: Creating jQuery Mobile Forms
+
+	- basic form: -> formbasics_finished.html
+	
+		- make a label hidden:
+			class="ui-hidden-accessible"
+			<label for="username" class="ui-hidden-accessible">Your Name:</label>
+			
+		- make the label and input responsive:
+			data-role="fieldcontain"
+			<div data-role="fieldcontain">
+    		    <label for="address">Your Address:</label>
+			    <input type="text" name="address" id="address" value="" placeholder="Your Address"/>
+            </div>
+			
+	- form input types: -> inputs_finished.htm
+	
+	- radio button and checkbox: -> radioschecks_finished.html
+	
+		- grouping form inputs:
+			data-role="controlgroup"
+			<fieldset data-role="controlgroup">
+			
+		- make controlgourp horizontal aligned:
+			data-type="horizontal"
+			<fieldset data-role="controlgroup" data-type="horizontal">
+			
+		- make controlgourp vertical aligned:
+			data-type="vertical"
+			<fieldset data-role="controlgroup" data-type="vertical">
+			
+	- toggle button: -> toggle_finished.html
+	
+		- create a toggle switch:
+			data-role="slider"
+			<select name="ts1" id="ts1" data-role="slider">
+			
+	- select list:
+	
+		- select list basic -> selectbasic_finished.html
+		
+		- select group -> selectgroup_finished.html
+		
+		- custom select: -> selectcustom_finished.html
+		
+			- make custom select:
+				data-native-menu="false"
+				<select name="select1" id="select1" data-native-menu="false">
+		
+	- slider -> slider_finished.html
+		
+		
 			
 	
 
